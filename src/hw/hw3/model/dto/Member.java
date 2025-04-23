@@ -15,11 +15,6 @@ public class Member {
         this.gender = gender;
     }
 
-    @Override
-    public String toString(){
-        return "";
-    }
-
     //Getter and Setter
     public String getName() {
         return name;
@@ -51,5 +46,15 @@ public class Member {
 
     public void setGender(char gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Member{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", gender=" + gender +
+                ", couponCount=" + couponCount +
+                '}';
     }
 }

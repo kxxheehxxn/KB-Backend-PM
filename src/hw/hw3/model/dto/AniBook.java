@@ -12,11 +12,6 @@ public class AniBook extends Book {
         this.accessAge = accessAge;
     }
 
-    @Override
-    public String toString() {
-        return "";
-    }
-
     //Getter and Setter
     public int getAccessAge() {
         return accessAge;
@@ -24,5 +19,10 @@ public class AniBook extends Book {
 
     public void setAccessAge(int accessAge) {
         this.accessAge = accessAge;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " / 제한 나이: " + accessAge;
     }
 }

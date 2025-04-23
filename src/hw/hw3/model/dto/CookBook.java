@@ -12,10 +12,6 @@ public class CookBook extends Book{
         this.coupon = coupon;
     }
 
-    @Override
-    public String toString(){
-        return "";
-    }
     //Getter and Setter
     public boolean isCoupon() {
         return coupon;
@@ -23,5 +19,10 @@ public class CookBook extends Book{
 
     public void setCoupon(boolean coupon) {
         this.coupon = coupon;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + " / 쿠폰 여부: " + (coupon ? "있음" : "없음");
     }
 }
