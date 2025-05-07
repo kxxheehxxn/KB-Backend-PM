@@ -1,0 +1,6 @@
+package d0507.ch11Lambda.basic.ch16.sec01;
+
+@FunctionalInterface
+public interface Calculable {
+    void calculate(int x, int y);
+}
